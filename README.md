@@ -2,7 +2,7 @@
 
 ### Objectives
 
-Automate entire LAMPstamp project utilizing Ansible on GCP, AWS, and Azure.
+Automate entire LAMPstamp project utilizing Ansible for future deployment on AWS, GCP, and Azure
 
 ### Technologies used
 
