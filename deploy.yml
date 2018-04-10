@@ -5,3 +5,8 @@
   - name: Announce Ansible is running
     debug:
       msg: "Running Ansible"
+
+  - name: Install Apache
+    apt: 
+      name: apache2
+      state: present
