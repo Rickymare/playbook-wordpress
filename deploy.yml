@@ -5,9 +5,3 @@
   - name: Announce Ansible is running
     debug:
       msg: "Running Ansible"
-
-  tasks:
-    - name: Run, Apache
-      block:
-      - name: apache2
-        apt:
