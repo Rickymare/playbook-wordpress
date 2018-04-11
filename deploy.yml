@@ -6,8 +6,7 @@
     debug:
       msg: "Running Ansible"
 
-  tasks:
-    - name: Run, Apache
-      block:
-      - name: apache2
-        apt:
+  - name: Install Apache
+    apt: 
+      name: apache2
+      state: present
