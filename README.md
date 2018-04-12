@@ -6,7 +6,7 @@ Automate entire LAMPstamp project utilizing Ansible for future deployment on AWS
 
 ### Technologies used
 
-* **L**inux - Ubuntu Xenial Xerus 16.04.1
+* **L**inux - Ubuntu Trusty Tahr 14.04
 * **A**pache HTTP Server
 * **M**ySQL RDBMS
 * **P**HP Hypertext Preprocessor
