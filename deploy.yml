@@ -10,4 +10,8 @@
     become: true
     apt: 
       name: apache2
-      state: present
+  - name: Add PHP 7.0 repo
+    become: true
+    apt_repository:
+      repo: 'ppa:ondrej/php'
+
