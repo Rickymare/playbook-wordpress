@@ -11,6 +11,7 @@
     apt: 
       name: apache2
       state: present
+
   - name: Add PHP 7.0 repo
     become: true
     apt_repository:
@@ -20,3 +21,4 @@
     become: true
     apt:
       name: php7.0
+      state: present
