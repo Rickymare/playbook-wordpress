@@ -22,3 +22,11 @@
     apt:
       name: php7.0
       state: present
+
+  - name: Install PHP dependencies
+    become: true
+    apt:
+      name: "{{ item }}"
+    with_items:
+      - "libapache2-mod-php7.0"
+      - "php7.0-mcrypt"
