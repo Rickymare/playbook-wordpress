@@ -30,3 +30,6 @@
     with_items:
       - "libapache2-mod-php7.0"
       - "php7.0-mcrypt"
+      - "php7.0-mysql"
+      - "php7.0-gd"
+      - "php-ssh2"  
