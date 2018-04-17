@@ -11,3 +11,22 @@
     apt: 
       name: apache2
       state: present
+
+  - name: Add PHP 7.0 repo
+    become: true
+    apt_repository:
+      repo: 'ppa:ondrej/php'
+      state: present
+  - name: Install PHP 7.0
+    become: true
+    apt:
+      name: php7.0
+      state: present
+
+  - name: Install PHP dependencies
+    become: true
+    apt:
+      name: "{{ item }}"
+    with_items:
+      - "libapache2-mod-php7.0"
+      - "php7.0-mcrypt"
